@@ -3,7 +3,6 @@ package ru.syntez.page.counter.usecases;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Service;
-import ru.syntez.page.counter.PageCounterMain;
 import ru.syntez.page.counter.entities.FilePageCountResult;
 
 import java.io.File;
@@ -29,7 +28,7 @@ public class PageCounterUsecase {
     private final String SYNC_LOCK = "FileProgressLock";
     private Set<String> filesInProgress = new HashSet<>();
 
-    private static Logger LOG = LogManager.getLogger(PageCounterMain.class);
+    private static Logger LOG = LogManager.getLogger(PageCounterUsecase.class);
 
     public PageCounterUsecase(FilePageCounterUsecase filePageCounterUsecase, FindFilesUsecase findFilesUsecase) {
         this.filePageCounterUsecase = filePageCounterUsecase;

@@ -3,7 +3,6 @@ package ru.syntez.page.counter.usecases;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Service;
-import ru.syntez.page.counter.PageCounterMain;
 import ru.syntez.page.counter.utils.ExtensionFileUtils;
 
 import java.io.File;
